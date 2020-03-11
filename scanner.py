@@ -9,8 +9,8 @@ def scanWrapper():
         closed = colored("[CLOSED]", "red")
         listen = colored("[OPEN]", "yellow")
 
-        host = input("[$3] set HOST —> ")
-        port = input("[$3] set PORT —> ")
+        host = input("[$2] set HOST —> ")
+        port = input("[$2] set PORT —> ")
         port=int(port)
         try:
             scan = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -30,7 +30,7 @@ def scanWrapper():
         closed = colored("[CLOSED]", "red")
         listen = colored("[OPEN]", "yellow")
 
-        host = input("[$3] RHOST --> ")
+        host = input("[$2] RHOST --> ")
         #edit if you need custom port list
         port = [20, 21, 22, 23, 42, 43, 53, 67, 69, 80, 443]
         for i in port:
@@ -51,7 +51,7 @@ def scanWrapper():
     print("\t[2]  ---  List Port Scan")
     print("*"*50)
 
-    action = input("[$3] Set scan type >> ")
+    action = input("[$2] Set scan type >> ")
     if action=="1":
         singlePortScan()
     elif action=="2":
