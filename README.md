@@ -1,12 +1,14 @@
 # Networker - for combat situations
 "Networker" - tool for penetration testing, irreplaceable instrument where there is no access to Nmap and Netcat 
+
 ## Modules
 
-— Bind Shell
+— Reverse Shell
 
-— Incoming connections handler
+— Port Scanner
 
-— Port scanner 
+— Help 
+
 ## Useful scripts
 
-— Python backdoor script with instructions 
+— Python backdoor script to establish TCP connection with attacker
