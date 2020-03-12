@@ -51,11 +51,13 @@ def scanWrapper():
     print("\t[2]  ---  List Port Scan")
     print("*"*50)
 
-    action = input("[$2] Set scan type >> ")
-    if action=="1":
-        singlePortScan()
-    elif action=="2":
-        listPortScan()
-    else:
-        print("Ti cho durak blyat nahuya ti jmesh drugie chisla, eto ne ya govnokoder eto ti ebanat)))")
+    while True:
+        action = input("[$2] Set scan type >> ")
+        if action=="1":
+            singlePortScan()
+        elif action=="2":
+            listPortScan()
+        else:
+            print("[!] Unrecognized scan type")
+            continue
 
