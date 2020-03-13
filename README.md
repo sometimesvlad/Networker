@@ -11,7 +11,7 @@
 
 ## Useful scripts
 
-— Python backdoor.py script to establish TCP connection with attacker
+— Python backdoor.py script to establish TCP connection with attacker ( Change attackers ip/port on your own!!! line 16&17)  
 
 ## Usage: 
 
